@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+     <main>
+      <form action="">
+        <section>
+          <div>
+            <label for="mail">Email</label>
+            <input type="mail" name="mail" id="mail" required>
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" pattern="[A-Za-z]+" minlength="2" maxlength="20" required>
+          </div>
+          <div>
+            <label for="Last_name">Last Name</label>
+            <input type="text" name="Last_name" id="Last_name" pattern="[A-Za-z]+" minlength="2" maxlength="20" required>
+          </div>
+          <div>
+            <label for="contact">Phone Number</label>
+            <input type="number" name="contact" id="contact" minlength="10" maxlength="18" required>
+          </div>
+          </section>
+          <section>
+            <fieldset>
+              <label for="">Chose a plan</label>
+             
+                <label for="free_plan">Free Plan: No ediditing & download rights</label>
+                <input type="radio" name="free_plan" id="free_plan" checked>
+              
+                <label for="standard_plan">Standard Plan: only ediditing rights</label>
+                <input type="radio" name="standard_plan" id="standard_plan">
+              
+                <label for="Pro_palan">Pro Plan: Both ediditing and download rights</label>
+                <input type="radio" name="Pro_palan" id="standard_plan">
+             
+            </fieldset>
+          </section>
+          <section id="payment information">
+            <label for="creditcard">Credit Card No:</label>
+            <input id="creditcard" type="text" name="creditcard"
+            placeholder="XXXX XXXX XXXX XXXX" style="width: 150px">
+
+            <label for="cvv">CVV:</label>
+            <input id="cvv" type="text" name="cvv"
+            placeholder="123" style="width: 40px">
+
+            <label for="expiry-date">Expity Date:</label>
+            <input type="date" name="expiry-date" id="expiry-date">
+
+            <label for="adress">Billing Adress:</label>
+            <input type="text">
+          </section>
+          <button type="submit">Submit</button>
+      </form>
+    </main>
+
+  </body>
+</html>
