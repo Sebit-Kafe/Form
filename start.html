@@ -42,20 +42,15 @@
           </div>
           </section>
           <section>
-            <fieldset>
-              <legend>Chose a plan:</legend>
-             
-                <label for="free_plan">Free Plan: No ediditing & download rights</label>
-                <input type="radio" name="free_plan" id="free_plan" value="free_plan">
-              
-                <label for="standard_plan">Standard Plan: only ediditing rights</label>
-                <input type="radio" name="standard_plan" id="standard_plan" value="standard_plan">
-              
-                
-                <label for="Pro_plan">Pro Plan: Both ediditing and download rights</label>
-                <input type="checkbox" name="Pro_plan" id="Pro_plan">
-             
-            </fieldset>
+              <label for="form-plan">Plans</label>
+              <select id="form-plan" name="plan">
+                <option value="0">Free</option>
+                <optgroup label="Monthly">
+                  <option value="199">1.99€/month</option>
+                  <option value="599">5.99€/month</option>
+                  <option value="1199">11.99€/month</option
+                  optgroup>
+           
           </section>
           <section id="payment information">
             <label for="creditcard">Credit Card No:</label>
